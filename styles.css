@@ -66,3 +66,12 @@ header{
 .form-input-group input:checked + label::after{
     right: 2px;
 }
+.form-input-group input + label .light{
+    display: none;
+}
+.form-input-group input:checked + label .dark{
+    display: none;
+}
+.form-input-group input:checked + label .light{
+    display: inline-block;
+}
