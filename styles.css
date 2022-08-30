@@ -29,10 +29,12 @@ header{
 .form-input-group label{
     cursor: pointer;
     width: 100%;
+    display: block;
 }
 .form-input-group input{
     appearance: none;
     position: relative;
+    display: none;
 }
 .form-input-group label::before{
     content: '';
