@@ -39,13 +39,19 @@
             
 
             <div class="form-input-group">
-                <input type="checkbox" name="" id="toggle">
-                <label for="toggle"> Switch to
+                <input type="checkbox" name="" id="toggleMode">
+                <label for="toggleMode"> Switch to
                     <span class="dark">dark</span>
                     <span class="light">light</span>
                 </label>
             </div>
         </section>
     </main>
+    <script>
+        const toggleDark = document.getElementById('toggleMode');
+        toggleDark.addEventListener('isChecked', function(){
+            body.classList.toggle('dark-body')
+        })
+    </script>
 </body>
 </html>

@@ -77,3 +77,6 @@ header{
 .form-input-group input:checked + label .light{
     display: inline-block;
 }
+.dark-body{
+    background-color: #222;
+}
