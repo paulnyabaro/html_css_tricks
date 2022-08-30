@@ -22,3 +22,47 @@ header{
     display: flex;
     gap:1rem;
 }
+.form-input-group{
+    position: relative;
+    max-width: 200px;
+}
+.form-input-group label{
+    cursor: pointer;
+    width: 100%;
+}
+.form-input-group input{
+    appearance: none;
+    position: relative;
+}
+.form-input-group label::before{
+    content: '';
+    height: 14px;
+    width: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.form-input-group label::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.form-input-group input:checked + label::before{
+    background-color: blue;
+}
+.form-input-group input:checked + label::after{
+    right: 2px;
+}
