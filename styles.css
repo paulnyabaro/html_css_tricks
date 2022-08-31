@@ -80,3 +80,26 @@ header{
 .dark-body{
     background-color: #222;
 }
+
+/* Images page CSS */
+.image-section{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.image-section img{
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    object-fit: cover;
+    object-position: top;
+}
+.image-section::-webkit-scrollbar{
+    display: none;
+}
