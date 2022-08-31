@@ -132,7 +132,8 @@ header{
     font-weight: 500;
     line-height: 70px;
     user-select: none;
-    pointer-events: none;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .calculator-buttons{
     display: grid;
