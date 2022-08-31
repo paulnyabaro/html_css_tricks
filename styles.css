@@ -103,3 +103,66 @@ header{
 .image-section::-webkit-scrollbar{
     display: none;
 }
+
+
+/* Calculator page CSS */
+.calculator-container{
+    min-height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    /* height: 400px; */
+    width: 300px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0002;
+    padding: 1rem;
+}
+.answer-section{
+    height: 70px;
+    width: 100%;
+    border-radius: 0.35rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ddd;
+    text-align: right;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 70px;
+    user-select: none;
+    pointer-events: none;
+}
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+}
+.calculator-buttons span{
+    padding: 15px;
+    border-radius: 0.25rem;
+    border: 1px solid #0001;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.calculator-buttons span:hover{
+    background-color: #eee;
+    opacity: 1;
+}
+.calculator-buttons span#clear{
+    grid-column: span 2;
+    background-color: #f00;
+    color: #fff;
+}
+.calculator-buttons span#add{
+    grid-row: span 2;
+    background-color: #00f;
+    color: #fff;
+}
+.calculator-buttons span#equals{
+    background-color: aqua;
+}
