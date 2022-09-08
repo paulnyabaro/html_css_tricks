@@ -167,3 +167,13 @@ header{
 .calculator-buttons span#equals{
     background-color: aqua;
 }
+
+/* Animated name css */
+.animated-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #35a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
