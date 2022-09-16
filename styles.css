@@ -286,3 +286,8 @@ header{
 /* .class:has(+ .sibling-class){
 
 } */
+
+/* Using :not and :has */
+/* .class:not(:has(p)){
+
+} */
