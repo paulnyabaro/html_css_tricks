@@ -281,3 +281,8 @@ header{
 .site-card:has(p:empty){
     background-color: rebeccapurple;
 }
+
+/* useful in selecting sibling classes */
+/* .class:has(+ .sibling-class){
+
+} */
