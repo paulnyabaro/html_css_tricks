@@ -254,3 +254,30 @@ header{
         fill: #fff;
     }
 }
+
+
+/* New css css */
+.d-site-flex{
+    display: flex;
+    gap:1rem;
+    margin-top: 1rem;
+}
+.site-card{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0001;
+    width: 100%;
+}
+.site-card:has(h4){
+    background-color: silver;
+}
+
+.site-card:has(p){
+    background-color: aquamarine;
+}
+.site-card:has(p:empty){
+    background-color: rebeccapurple;
+}
