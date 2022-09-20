@@ -299,3 +299,104 @@ image-gallery:has(img:hover) img:not(:hover){
     scale:0.8;
     opacity: 0.7;
 }
+
+/* Fancy form */
+.flex-items-center{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+}
+.fancy-form{
+    height: 350px;
+    width: 290px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.fancy-form::before,.fancy-form::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.fancy-form::after{
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+.form-inside{
+    background-color: #111;
+    inset: 2px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 6px;
+    color: #eee;
+    padding: 2rem;
+    font-family:'Courier New', Courier, monospace
+}
+.form-inside h4{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: #45f3ff;
+    font-weight: bold;
+}
+.form-group{
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+.form-group input{
+    width: 100%;
+    position: relative;
+    padding: 10px 10px 10px 0;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #ddd;
+    transition: 0.5s ease;
+}
+
+.form-inside button{
+    padding: 10px;
+    border: 1px solid #45f3ff;
+    background-color: #45f3ff;
+    border-radius: 4px;
+    width: 100%;
+    margin: 1rem 0 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.form-inside label{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+}
+.form-group input:is(:valid,:focus){
+    border-radius: 0;
+    border-bottom: 1px solid #45f3ff;
+}
+.form-inside input:is(:valid,:focus) ~ label{
+    top:0;
+    transform: translateY(-70%);
+    color: #45f3ff;
+    font-size: 0.75rem;
+}
