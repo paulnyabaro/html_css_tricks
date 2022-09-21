@@ -402,3 +402,17 @@ image-gallery:has(img:hover) img:not(:hover){
     color: #45f3ff;
     font-size: 0.75rem;
 }
+
+/* Art gallery CSS */
+.art-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    box-sizing: border-box;
+}
+.art-flex img{
+    width: 50%;
+    border: 2px solid #45f3ff;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
